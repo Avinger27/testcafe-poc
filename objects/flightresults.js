@@ -12,7 +12,7 @@ export default class flightresults {
 
     }
 
-    async validateSearchResults (t){
+    async validateSearchResults (t, searchData){
         //Code for a specifc action that is done on an object
         await t
             .expect(this.table).exists;
@@ -24,9 +24,16 @@ export default class flightresults {
         console.log("Number of search columns - " + columnCount);
 
         for(let i=0; i < rowCount; i++){
-            for(let j=1; j < columnCount; j++){
-                let tdText = await this.table.find('tr').nth(i).find('td').nth(j).textContent;
-                console.log("flight no - " + tdText);
+            let flight_no = await this.table.find('tr').nth(i).find('td').nth(1).textContent;
+            //console.log("flight no - " + tdText);
+            let airline = await this.table.find('tr').nth(i).find('td').nth(2).textContent;
+            let departs = await this.table.find('tr').nth(i).find('td').nth(3).textContent;
+            let arrives = await this.table.find('tr').nth(i).find('td').nth(4).textContent;
+            let price = await this.table.find('tr').nth(i).find('td').nth(5).textContent;
+            //console.log(searchData[i].flight_no);
+
+            if (flight_no == (searchData[i].flight_no) && airline == (searchData[i].airline) && departs == (searchData[i].departs) && arrives == (searchData[i].arrives) && price == (searchData[i].price)){
+                console.log("Details for flight " + flight_no + " are as expected");
             }
         }
     }

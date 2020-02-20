@@ -19,6 +19,7 @@ const results = new Results();
 
 //Load the config relevant to the supplied environment variable.
 const config = yaml.safeLoad(fs.readFileSync("config.yml","utf8"));
+const data =require("../data.json")
 //__dirname + "/config.yml", "utf8"));
 
 //Load the page
@@ -32,6 +33,6 @@ test('Find flights', async t => {
     await t.maximizeWindow();
     await home.findflights(t, config.from, config.to)
     //Validate the search results
-    await results.validateSearchResults(t);
+    await results.validateSearchResults(t, data);
     //await login.loginUser(t, config.webusername, config.webpassword);
 })
