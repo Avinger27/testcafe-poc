@@ -1,0 +1,10 @@
+{
+    "skipJsErrors": true,
+    "selectorTimeout": 15000,
+    "assertionTimeout": 15000,
+    "skipUncaughtErrors": true,
+    "screenshots": {
+        "path": "screenshots/",
+        "takeOnFails": true
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "testcafe-poc",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "@percy/testcafe": "^0.2.0",
+    "testcafe": "^1.7.1"
+  },
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "faker": "^4.1.0",
+    "ffmpeg": "0.0.4",
+    "js-yaml": "^3.13.1",
+    "mout": "^1.1.0",
+    "node-cron": "^1.2.1",
+    "properties-reader": "0.0.16",
+    "testcafe-react-selectors": "^3.3.0",
+    "testcafe-reporter-html": "^1.4.5",
+    "testcafe-reporter-json": "^2.2.0",
+    "toml": "^2.3.6"
+  },
+  "author": "",
+  "license": "ISC"
+}
