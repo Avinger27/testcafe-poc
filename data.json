@@ -1,0 +1,7 @@
+[
+    {"flight_no":"43","airline":"Virgin America","departs":"1:43 AM","arrives":"9:45 PM", "price":"$472.56"},
+    {"flight_no":"234","airline":"United Airlines","departs":"7:43 AM","arrives":"10:45 PM", "price":"$432.98"},
+    {"flight_no":"9696","airline":"Aer Lingus","departs":"5:27 AM","arrives":"8:22 PM", "price":"$200.98"},
+    {"flight_no":"12","airline":"Virgin America","departs":"11:23 AM","arrives":"1:45 PM", "price":"$765.32"},
+    {"flight_no":"4346","airline":"Lufthansa","departs":"1:45 AM","arrives":"8:34 PM", "price":"$233.98"}
+]
