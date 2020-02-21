@@ -2,8 +2,8 @@ import { Selector } from 'testcafe';
 
 //parse argument options
 import minimist from 'minimist';
-import Home from '../objects/home'
-import Results from '../objects/flightresults'
+import Home from '../../objects/home'
+import Results from '../../objects/flightresults'
 
 //Load libraries to load and read config files
 const fs = require('fs');
