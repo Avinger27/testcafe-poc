@@ -15,7 +15,12 @@ jobs:
       - name: checkout repo for testing
         uses: actions/checkout@v1
 
-      - name: Test flight search
+      - name: Test flight search on chrome
         uses: DevExpress/testcafe-action@latest
         with:
           args: "chrome:headless tests/findflightstest.js"
+
+      - name: Test flight search on firefox
+        uses: DevExpress/testcafe-action@latest
+        with:
+          args: "firefox:headless tests/findflightstest.js"
