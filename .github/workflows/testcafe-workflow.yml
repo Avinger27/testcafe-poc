@@ -1,4 +1,4 @@
-name: Use github actions to test execution
+name: Flight Search
 
 on: [push]
 
