@@ -1,0 +1,23 @@
+name: Use github actions to test execution
+
+on: [push]
+
+jobs:
+  build:
+    name: Run tests
+    runs-on: $
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.X
+
+      - uses: actions/checkout@v1
+
+      - name: Run TestCafe Tests
+        uses: DevExpress/testcafe-action@latest
+        with:
+          args: "chrome:headless ./tests/findflightstest.js"

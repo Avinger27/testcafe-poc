@@ -38,12 +38,4 @@ export default class flightresults {
         }
     }
 
-    async objectfunction2 (t){
-        //Code for a specifc action that is done on an object
-    }
-
-    async objectfunction_N (t){
-        //Code for a specifc action that is done on an object
-    }
-
 }
