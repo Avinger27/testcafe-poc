@@ -4,20 +4,18 @@ on: [push]
 
 jobs:
   build:
-    name: Run tests
+    name: test poc
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
         
     steps:
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12.X
 
-      - uses: actions/checkout@v1
+      - name: checkout repo for testing
+        uses: actions/checkout@v1
 
-      - name: Run TestCafe Tests
+      - name: Test flight search
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome:headless ./tests/findflightstest.js"
+          args: "chrome:headless tests/findflightstest.js"
