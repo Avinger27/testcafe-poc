@@ -25,4 +25,3 @@ export default class object_template {
     }
 
 }
-
