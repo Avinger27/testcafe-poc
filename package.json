@@ -15,7 +15,7 @@
     "faker": "^4.1.0",
     "ffmpeg": "0.0.4",
     "js-yaml": "^3.13.1",
-    "mout": "^1.1.0",
+    "mout": "^1.2.3",
     "node-cron": "^1.2.1",
     "properties-reader": "0.0.16",
     "sumo-logger": "^2.6.1",
