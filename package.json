@@ -17,7 +17,7 @@
     "js-yaml": "^3.13.1",
     "mout": "^1.1.0",
     "node-cron": "^1.2.1",
-    "properties-reader": "0.0.16",
+    "properties-reader": "2.2.0",
     "sumo-logger": "^2.6.1",
     "testcafe-react-selectors": "^3.3.0",
     "testcafe-reporter-html": "^1.4.5",
